@@ -1,5 +1,5 @@
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from '@mui/material/CssBaseline'; // Import CssBaseline for consistent styling
 import { ThemeProvider } from '@mui/material/styles'; // Import ThemeProvider
 import theme from '../theme'; // Import the custom theme
 import "./globals.css";
@@ -7,8 +7,8 @@ import "./globals.css";
 // Remove Geist font imports
 
 export const metadata = {
-  title: "MUI Example App", // Updated title
-  description: "A simple MUI example page", // Updated description
+  title: "pizzerton", // Updated title
+  description: "work in progress site", // Updated description
 };
 
 export default function RootLayout({ children }) {
