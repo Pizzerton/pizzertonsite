@@ -28,6 +28,15 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "NikoFont", Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'NikoFont';
+  src: url('/nikogen/font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 a {
@@ -40,3 +49,4 @@ a {
     color-scheme: dark;
   }
 }
+
