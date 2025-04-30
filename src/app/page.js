@@ -301,7 +301,7 @@ export default function HomePage() {
                 <YouTube sx={{ fontSize: '2rem' }} /> {/* Placeholder - Replace with YouTubeIcon */}
                 </IconButton>
                 <Typography variant="body2" sx={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-                shitposts
+                Videos
                 </Typography>
               </Grid>
 
