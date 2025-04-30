@@ -28,7 +28,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Pizzerton - Welcome!',
-    description: 'A work in progress site showcasing cute stuff and Pan.',
+    description: 'A work in progress website made with the help of JuiceyDev.',
     // url: 'https://your-domain.com', // Uncomment and replace
     siteName: 'Pizzerton',
     // images: [ // Uncomment and add images when available, ensure absolute URLs or use metadataBase
@@ -48,19 +48,14 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
-  twitter: {
-    card: 'summary_large_image', // Or 'summary' if you prefer smaller images
-    title: 'Pizzerton - Welcome!',
-    description: 'A work in progress site showcasing cute stuff and Pan.',
-    // siteId: 'YourTwitterSiteID', // Optional: Your Twitter numeric ID
-    // creator: '@YourTwitterHandle', // Optional: Your Twitter handle
-    // creatorId: 'YourTwitterCreatorID', // Optional: Your Twitter numeric ID
-    // images: ['https://your-domain.com/twitter-image.png'], // Must be an absolute URL or use metadataBase
-  },
+
   robots: { // Define indexing rules for search engines
     index: true,
     follow: true,
     nocache: true, // Good for development, consider changing for production
+    noai: true, // DisAllow AI indexing
+    noimageai: true, // DisAllow AI image indexing
+    
     googleBot: {
       index: true,
       follow: true,
@@ -71,7 +66,7 @@ export const metadata = {
     },
   },
   icons: { // Keep existing icons, ensure paths are correct relative to /public
-    icon: "/favicon.ico", // Standard favicon
+    icon: "/siteicon.png", // Standard favicon
     // apple: '/apple-icon.png', // Example for Apple touch icon
     // shortcut: '/shortcut-icon.png' // Example for shortcut icon
   },
