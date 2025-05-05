@@ -131,6 +131,35 @@ const itemData = [
     author: '@pan(cakes)™',
 
   }, 
+
+  { 
+    img: '/arts/self/cone.jpeg',
+    title: 'cone',
+    author: '@pan(cakes)™',
+
+  }, 
+
+  { 
+    img: '/arts/self/tigershark alex.jpeg',
+    title: 'tigershark alex',
+    author: '@pan(cakes)™',
+
+  }, 
+
+  { 
+    img: '/arts/self/niko.jpeg',
+    title: 'niko',
+    author: '@pan(cakes)™',
+
+  }, 
+
+  { 
+    img: '/arts/self/goku.jpeg',
+    title: 'goku',
+    author: '@pan(cakes)™',
+
+  }, 
+
   { 
     img: '/arts/self/saont.png',
     title: 'ibis saint',
@@ -244,7 +273,7 @@ export default function HomePage() {
                     Pan(cakes)™
                   </Typography>
                   <Typography variant="body1">
-                   I do dumb stuff and I love my partners both, I do art for fun and talk to my friends often
+                   Dumb gay genderfluid femboy that does silly stuff, if you need to contact me my email is pizzerton@gmail.com
                   </Typography>
                 </Grid>
               </Grid>
@@ -333,8 +362,8 @@ export default function HomePage() {
 
             {/* Art Section */}
           <Grid item xs={12} md={6}>
-            <Paper elevation={3} sx={{ background:"#403d40", padding: 0, borderRadius: 5, height: '100%', overflow: 'hidden' }}>
-              <Accordion sx={{ background: 'transparent', color: 'inherit', '&.Mui-expanded': { margin: 0 }, boxShadow: 'none' }}>
+            <Paper elevation={3} sx={{ background:"#403d40", padding: 0, width:"100%", borderRadius: 5, height: '100%', overflow: 'hidden', minHeight: '400px', display: 'flex', flexDirection: 'column' }}>
+              <Accordion sx={{ background: 'transparent', color: 'inherit', '&.Mui-expanded': { margin: 0 }, boxShadow: 'none', flexShrink: 0 }}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
                   aria-controls="panel1a-content"
@@ -343,7 +372,7 @@ export default function HomePage() {
                 >
                   <Typography variant="h4">Art Showcase</Typography>
                 </AccordionSummary>
-                <AccordionDetails sx={{ padding: 2 }}>
+                <AccordionDetails sx={{ padding: 2, overflowY: 'auto', maxHeight: 'calc(100% - 65px)' }}>
                   <TextField
                     fullWidth
                     variant="filled"
@@ -356,11 +385,12 @@ export default function HomePage() {
                     {filteredArt.map((item) => (
                       <ImageListItem key={item.img}>
                         <Image
-                          src={`${item.img}?w=248&fit=crop&auto=format`}
+                          src={item.img}
                           alt={item.title}
                           width={248}
                           height={248}
                           loading="lazy"
+                          sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
                           style={{ display: 'block', width: '100%', height: 'auto', borderRadius: '4px' }}
                         />
                         <ImageListItemBar
