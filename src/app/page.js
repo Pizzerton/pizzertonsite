@@ -126,19 +126,41 @@ const itemData = [
 
   }, 
   { 
-    img: '/arts/self/spearmaster.jpeg',
-    title: 'spearmaster',
+    img: '/arts/self/ivoheart.png',
+    title: 'ivo heart',
     author: '@pan(cakes)™',
+    
 
-  }, 
+    
+
+  },
+  {
+    img: '/arts/self/ivoquickdraw.jpeg',
+    title: 'quick ivo',
+    author: '@pan(cakes)™',
+  },
 
   { 
-    img: '/arts/self/cone.jpeg',
-    title: 'cone',
+    img: '/arts/self/diablo.jpeg',
+    title: 'diablo',
     author: '@pan(cakes)™',
 
   }, 
 
+
+  { 
+    img: '/arts/self/slugcats.png',
+    title: 'slugcats',
+    author: '@pan(cakes)™',
+
+  }, 
+  { 
+    img: '/arts/self/frutt.png',
+    title: 'frutt bday',
+    author: '@pan(cakes)™',
+
+  }, 
+  
   { 
     img: '/arts/self/tigershark alex.jpeg',
     title: 'tigershark alex',
@@ -248,10 +270,10 @@ export default function HomePage() {
             </Grid>
             <Grid item xs={12}>
               <Button color="primary" variant='contained' sx={{margin:"5px"}} href="https://bsky.app/profile/olxgs.bsky.social">
-                <Typewriter text="olx is a good boy" speed={50} />
+                <Typewriter text="olxgs is an amazing boyfriend" speed={50} />
               </Button>
               <Button color="secondary" variant='contained' sx={{ margin: "5px" }} href="https://bsky.app/profile/juicey.falseshot.tech">
-                <Typewriter text="juicey is a good girl" speed={50} />
+                <Typewriter text="juicey is an amazing girlfriend" speed={50} />
               </Button>
             </Grid>
           </Grid>
@@ -273,7 +295,7 @@ export default function HomePage() {
                     Pan(cakes)™
                   </Typography>
                   <Typography variant="body1">
-                   Dumb gay genderfluid femboy that does silly stuff, if you need to contact me my email is pizzerton@gmail.com
+                   Dumb gay genderfluid femboy that does silly stuff and uses linux, if you need to contact me my email is pizzerton@gmail.com
                   </Typography>
                 </Grid>
               </Grid>
